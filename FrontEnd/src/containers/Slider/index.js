@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useData } from "../../contexts/DataContext";
 import { getMonth } from "../../helpers/Date";
 
@@ -23,9 +23,8 @@ const Slider = () => {
   return (
     <div className="SlideCardList">
       {byDateDesc?.map((event, idx) => (
-        <Link key={`slide-${event.id}`}to={`/event/${event.id}`} className={`SlideCard SlideCard--${
-            index === idx ? "display" : "hide"
-        }`}>
+        <Link key={`slide-${event.id}`} to={`/event/${event.id}`} className={`SlideCard SlideCard--${index === idx ? "display" : "hide"
+          }`}>
           <div key={event.title}>
             <img src={event.cover} alt="forum" />
             <div className="SlideCard__descriptionContainer">
@@ -40,7 +39,7 @@ const Slider = () => {
             <div className="SlideCard__pagination">
               {byDateDesc.map((_, radioIdx) => (
                 <input
-                  key={Math.random()*100}
+                  key={Math.random() * 100}
                   type="radio"
                   name="radio-button"
                   checked={idx === radioIdx}

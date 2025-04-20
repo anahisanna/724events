@@ -1,0 +1,463 @@
+<html
+        xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>Jira</title>
+<style type="text/css">
+table {
+    mso-displayed-decimal-separator:"\,";
+    mso-displayed-thousand-separator:" ";
+}
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color:black;
+}
+
+</style>
+<META HTTP-EQUIV="Content-Type" Content="application/vnd.ms-excel; charset=UTF-8">
+<!-- JRA-7598 - ensure fields (e.g. description) occupy only one cell - even fields containing newlines. -->
+<!--
+Vertical align all cells to the top, in order to align all issue rows of issuetable to the top,
+since Excel does not use or save the css files it is hardcoded here.
+-->
+<style>
+@page
+{
+mso-page-orientation:landscape;
+margin:.25in .25in .5in .25in;
+mso-header-margin:.5in;
+mso-footer-margin:.25in;
+mso-footer-data:"&R&P of &N";
+mso-horizontal-page-align:center;
+mso-vertical-page-align:center;
+}
+
+td.issuekey,
+td.issuetype,
+td.status {
+    mso-style-parent: "";
+    mso-number-format: \@;
+    text-align: left;
+}
+br
+{
+    mso-data-placement:same-cell;
+}
+
+td
+{
+    vertical-align: top;
+}
+</style>
+
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>general_report</x:Name>
+<x:WorksheetOptions>
+<x:Print>
+<x:ValidPrinterInfo/>
+</x:Print>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+<body>
+
+<table border="1">
+    <tr bgcolor="#205081" height="30">
+        <td colspan="11">
+            <img src="https://anahisanna.atlassian.net/images/icon-jira-family-logo.png" width="57" height="30" border="0" alt="Jira">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="11">
+            <a href="https://anahisanna.atlassian.net/issues/?jql=project+%3D+%22CF724%22+ORDER+BY+created+DESC">Jira</a>
+        </td>
+    </tr>
+    <tr>
+                <td colspan="11">
+            Affichage de <strong>11</strong> ticket(s) à <strong>13/sept./24 11:51 AM</strong>.
+        </td>
+    </tr>
+</table>
+
+
+
+
+                                        <table id="issuetable" class="aui " border="1" cellpadding="3" cellspacing="1" width="100%">
+                        <thead>
+        <tr class="rowHeader">
+            
+                                                            <th class="colHeaderLink headerrow-issuetype" data-id="issuetype">
+                                                        Type de ticket
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-issuekey" data-id="issuekey">
+                                                        Clé
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-summary" data-id="summary">
+                                                        Résumé
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-assignee" data-id="assignee">
+                                                        Assigné(e)
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-reporter" data-id="reporter">
+                                                        Rapporteur
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-priority" data-id="priority">
+                                                        Priorité
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-status" data-id="status">
+                                                        État
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-resolution" data-id="resolution">
+                                                        Résolution
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-created" data-id="created">
+                                                        Création
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-updated" data-id="updated">
+                                                        Mise à jour
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-duedate" data-id="duedate">
+                                                        Date d&#39;échéance
+                                                    </th>
+                                                                    </tr>
+    </thead>
+    <tbody>
+                    
+
+                <tr id="issuerow10079" rel="10079" data-issuekey="CF724-11" class="issuerow">
+                                            <td class="issuetype">    Bug
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="CF724-11" href="https://anahisanna.atlassian.net/browse/CF724-11">CF724-11</a>
+</td>
+                                            <td class="summary"><p>
+                Erreur lors de l&#39;utilisation de l&#39;endpoint get/events/id dans Swagger avec un ID incorrect.
+    </p>
+</td>
+                                            <td class="assignee">    <em>Non assigné</em>
+</td>
+                                            <td class="reporter">            Anahi Sanna
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;À faire&lt;/span&gt;">À faire</span>    </td>
+                                            <td class="resolution">    <em>Non résolu</em>
+</td>
+                                            <td class="created"> 12/sept./24 4:45 PM </td>
+                                            <td class="updated"> 12/sept./24 4:50 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10078" rel="10078" data-issuekey="CF724-10" class="issuerow">
+                                            <td class="issuetype">    Bug
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="CF724-10" href="https://anahisanna.atlassian.net/browse/CF724-10">CF724-10</a>
+</td>
+                                            <td class="summary"><p>
+                Erreur &quot;Internal Server Error&quot; sur l&#39;endpoint de Swagger lors de la récupération du dernier événement.
+    </p>
+</td>
+                                            <td class="assignee">    <em>Non assigné</em>
+</td>
+                                            <td class="reporter">            Anahi Sanna
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;À faire&lt;/span&gt;">À faire</span>    </td>
+                                            <td class="resolution">    <em>Non résolu</em>
+</td>
+                                            <td class="created"> 12/sept./24 4:24 PM </td>
+                                            <td class="updated"> 12/sept./24 4:24 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10077" rel="10077" data-issuekey="CF724-9" class="issuerow">
+                                            <td class="issuetype">    Bug
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="CF724-9" href="https://anahisanna.atlassian.net/browse/CF724-9">CF724-9</a>
+</td>
+                                            <td class="summary"><p>
+                Contact - Erreur dans le formulaire de contact (Erreur 400 - Limite de caractères dépassée)
+    </p>
+</td>
+                                            <td class="assignee">    <em>Non assigné</em>
+</td>
+                                            <td class="reporter">            Anahi Sanna
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;À faire&lt;/span&gt;">À faire</span>    </td>
+                                            <td class="resolution">    <em>Non résolu</em>
+</td>
+                                            <td class="created"> 11/sept./24 5:08 PM </td>
+                                            <td class="updated"> 11/sept./24 5:08 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10076" rel="10076" data-issuekey="CF724-8" class="issuerow">
+                                            <td class="issuetype">    Bug
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="CF724-8" href="https://anahisanna.atlassian.net/browse/CF724-8">CF724-8</a>
+</td>
+                                            <td class="summary"><p>
+                Tous les événements affichent la même adresse.
+    </p>
+</td>
+                                            <td class="assignee">    <em>Non assigné</em>
+</td>
+                                            <td class="reporter">            Anahi Sanna
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;À faire&lt;/span&gt;">À faire</span>    </td>
+                                            <td class="resolution">    <em>Non résolu</em>
+</td>
+                                            <td class="created"> 11/sept./24 4:47 PM </td>
+                                            <td class="updated"> 12/sept./24 4:25 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10075" rel="10075" data-issuekey="CF724-7" class="issuerow">
+                                            <td class="issuetype">    Bug
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="CF724-7" href="https://anahisanna.atlassian.net/browse/CF724-7">CF724-7</a>
+</td>
+                                            <td class="summary"><p>
+                Footer (Notre derniére prestation) - Affichage d&#39;erreur
+    </p>
+</td>
+                                            <td class="assignee">    <em>Non assigné</em>
+</td>
+                                            <td class="reporter">            Anahi Sanna
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;À faire&lt;/span&gt;">À faire</span>    </td>
+                                            <td class="resolution">    <em>Non résolu</em>
+</td>
+                                            <td class="created"> 11/sept./24 4:27 PM </td>
+                                            <td class="updated"> 11/sept./24 4:30 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10074" rel="10074" data-issuekey="CF724-6" class="issuerow">
+                                            <td class="issuetype">    Bug
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="CF724-6" href="https://anahisanna.atlassian.net/browse/CF724-6">CF724-6</a>
+</td>
+                                            <td class="summary"><p>
+                Accueil (slider) - Délai de 5 secondes pour le chargement des images dans le slider
+    </p>
+</td>
+                                            <td class="assignee">    <em>Non assigné</em>
+</td>
+                                            <td class="reporter">            Anahi Sanna
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;À faire&lt;/span&gt;">À faire</span>    </td>
+                                            <td class="resolution">    <em>Non résolu</em>
+</td>
+                                            <td class="created"> 11/sept./24 4:19 PM </td>
+                                            <td class="updated"> 11/sept./24 4:30 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10073" rel="10073" data-issuekey="CF724-5" class="issuerow">
+                                            <td class="issuetype">    Bug
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="CF724-5" href="https://anahisanna.atlassian.net/browse/CF724-5">CF724-5</a>
+</td>
+                                            <td class="summary"><p>
+                Contact - Aucun message de succès s&#39;affiche après l&#39;envoi du formulaire.
+    </p>
+</td>
+                                            <td class="assignee">    <em>Non assigné</em>
+</td>
+                                            <td class="reporter">            Anahi Sanna
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;À faire&lt;/span&gt;">À faire</span>    </td>
+                                            <td class="resolution">    <em>Non résolu</em>
+</td>
+                                            <td class="created"> 11/sept./24 4:13 PM </td>
+                                            <td class="updated"> 11/sept./24 4:26 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10072" rel="10072" data-issuekey="CF724-4" class="issuerow">
+                                            <td class="issuetype">    Bug
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="CF724-4" href="https://anahisanna.atlassian.net/browse/CF724-4">CF724-4</a>
+</td>
+                                            <td class="summary"><p>
+                Contact - Cas d&#39;autorisation manquant
+    </p>
+</td>
+                                            <td class="assignee">    <em>Non assigné</em>
+</td>
+                                            <td class="reporter">            Anahi Sanna
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;À faire&lt;/span&gt;">À faire</span>    </td>
+                                            <td class="resolution">    <em>Non résolu</em>
+</td>
+                                            <td class="created"> 11/sept./24 4:10 PM </td>
+                                            <td class="updated"> 11/sept./24 4:25 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10071" rel="10071" data-issuekey="CF724-3" class="issuerow">
+                                            <td class="issuetype">    Bug
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="CF724-3" href="https://anahisanna.atlassian.net/browse/CF724-3">CF724-3</a>
+</td>
+                                            <td class="summary"><p>
+                Contact - Message d&#39;erreur manquant pour indiquer des champs vides.
+    </p>
+</td>
+                                            <td class="assignee">    <em>Non assigné</em>
+</td>
+                                            <td class="reporter">            Anahi Sanna
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;À faire&lt;/span&gt;">À faire</span>    </td>
+                                            <td class="resolution">    <em>Non résolu</em>
+</td>
+                                            <td class="created"> 11/sept./24 4:07 PM </td>
+                                            <td class="updated"> 11/sept./24 4:07 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10070" rel="10070" data-issuekey="CF724-2" class="issuerow">
+                                            <td class="issuetype">    Bug
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="CF724-2" href="https://anahisanna.atlassian.net/browse/CF724-2">CF724-2</a>
+</td>
+                                            <td class="summary"><p>
+                Nos réalisations - Erreur dans le filtrage des vignettes selon la catégorie sélectionnée
+    </p>
+</td>
+                                            <td class="assignee">    <em>Non assigné</em>
+</td>
+                                            <td class="reporter">            Anahi Sanna
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;À faire&lt;/span&gt;">À faire</span>    </td>
+                                            <td class="resolution">    <em>Non résolu</em>
+</td>
+                                            <td class="created"> 11/sept./24 4:04 PM </td>
+                                            <td class="updated"> 11/sept./24 4:06 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow10069" rel="10069" data-issuekey="CF724-1" class="issuerow">
+                                            <td class="issuetype">    Bug
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="CF724-1" href="https://anahisanna.atlassian.net/browse/CF724-1">CF724-1</a>
+</td>
+                                            <td class="summary"><p>
+                Évènement - Message envoie succès manquant
+    </p>
+</td>
+                                            <td class="assignee">    <em>Non assigné</em>
+</td>
+                                            <td class="reporter">            Anahi Sanna
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;À faire&lt;/span&gt;">À faire</span>    </td>
+                                            <td class="resolution">    <em>Non résolu</em>
+</td>
+                                            <td class="created"> 11/sept./24 4:03 PM </td>
+                                            <td class="updated"> 11/sept./24 4:05 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+        </tbody>
+    </table>
+    <div class="end-of-stable-message"></div>
+            <table border="1" >
+<tr>
+    <td bgcolor="#dddddd" colspan="11"><font size="1">
+        Généré à Fri Sep 13 09:51:49 UTC 2024 par Anahi Sanna avec JIRA 1001.0.0-SNAPSHOT#100266-rev:428275b375169d30968fac641111aefa87c46b93.
+    </font></td>
+</tr>
+</table>
+
+</body>
+</html>
